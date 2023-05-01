@@ -1,0 +1,182 @@
+body {
+    background-image: url(0bg.jpg);
+}
+
+
+.music-bar {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 1;
+    overflow: hidden;
+}
+  
+  .bar {
+    position: absolute;
+    bottom: 0;
+    width: 3px;
+    height: 0;
+    margin: 0 0;
+    background-color: #fff;
+    animation: wave 2s ease-in-out infinite;
+}
+  
+  .bar:nth-child(1) {
+    left: 43%;
+    animation-delay: -0.2s;
+  }
+  
+  .bar:nth-child(2) {
+    left: 44%;
+    animation-delay: -0.4s;
+  }
+  
+  .bar:nth-child(3) {
+    left: 45%;
+    animation-delay: -0.6s;
+  }
+  
+  .bar:nth-child(4) {
+    left: 46%;
+    animation-delay: -0.8s;
+  }
+  
+  .bar:nth-child(5) {
+    left: 47%;
+    animation-delay: -1s;
+  }
+  
+  .bar:nth-child(6) {
+    left: 48%;
+    animation-delay: -1.2s;
+  }
+  
+  .bar:nth-child(7) {
+    left: 49%;
+    animation-delay: -1.4s;
+  }
+  
+  .bar:nth-child(8) {
+    left: 50%;
+    animation-delay: -1.6s;
+  }
+  
+  .bar:nth-child(9) {
+    left: 51%;
+    animation-delay: -1.8s;
+  }
+  
+  .bar:nth-child(10) {
+    left: 52%;
+    animation-delay: -2s;
+  }
+
+  .bar:nth-child(11) {
+    left: 53%;
+    animation-delay: -2.2s;
+  }
+
+  .bar:nth-child(12) {
+    left: 54%;
+    animation-delay: -2.4s;
+  }
+
+  .bar:nth-child(13) {
+    left: 55%;
+    animation-delay: -2.6s;
+  }
+
+  .bar:nth-child(14) {
+    left: 56%;
+    animation-delay: -2.8s;
+  }
+  
+  @keyframes wave {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 50px;
+    }
+    100% {
+      height: 0;
+    }
+}
+  
+
+
+/* --------------------------------- */
+
+.carousel {
+    width: 50%;
+    margin: 8% auto 0;
+}
+
+.carousel-control-prev-icon {
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+}
+
+.carousel-control-next-icon {
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+}
+
+.homeBack {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.homeBack > button {
+    border-radius: 30px;
+    background-color: rgb(255, 255, 144);
+    color: black;
+}
+
+@media (max-width: 800px) {
+    .carousel {
+        width: 70%;
+        margin-top: 13%;
+    }
+
+    .homeBack {
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel {
+        width: 90%;
+        margin-top: 15%;
+    }
+
+    .homeBack {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 425px) {
+    .carousel {
+        width: 95%;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 375px) {
+    .carousel {
+        width: 98%;
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel {
+        width: 99%;
+    }
+
+    .homeBack {
+        margin-top: 20%;
+    }
+}

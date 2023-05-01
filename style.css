@@ -1,0 +1,169 @@
+#coverPage {
+  background-image: url(0backg1.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 2, 20, 0.8); /* Adjust alpha value to control opacity */
+    z-index: 1; /* Ensure the overlay is positioned above the background image */
+  }
+
+.cake, .blow {
+  text-align: center;
+}
+
+  .cake > img {
+    width: 16%;
+    border-radius: 300px;
+    margin-top: 2%;
+  }
+
+  .cake > img:hover {
+    cursor: pointer;
+  }
+
+  .blow > img {
+    width: 16%;
+    border-radius: 30px;
+    margin-top: 5%;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.cakeBtn {
+  margin-top: 5px;
+  text-align: center;
+
+}
+
+.cakeBtn > button {
+  width: 20%;
+  background-color: red;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: 1%;
+}
+
+.cakeBtn > button:hover {
+  background-color: rgb(255, 49, 49);
+}
+
+.surpriseBtn {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.surpriseBtn > button {
+  background-color: red;
+  font-weight: bold;
+  width: 30%;
+  color: white;
+  padding: 1% 2%;
+  border-radius: 100px;
+}
+
+.surpriseBtn > button:hover {
+  background-color: rgb(255, 45, 45);
+}
+
+.goBck1 {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.goBck1 > button {
+  border-radius: 20px;
+  width: 16%;
+  background-color: rgb(255, 244, 146);
+}
+
+.goBck1 > button:hover {
+  background-color: rgb(255, 230, 0);
+}
+
+
+
+@media (max-width: 768px){
+  .bothImg > img {
+    width: 25%;
+  }
+
+  .cakeBtn, .surpriseBtn {
+    margin-top: 6%;
+  }
+
+  .cakeBtn > button,.surpriseBtn > button {
+    width: 30%;
+    padding: 1% 0;
+    font-size: 0.7rem;
+  }
+
+  .goBck1 > button {
+    width: 20%;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .bothImg > img {
+    width: 30%;
+    margin-top: 6%;
+  }
+
+  .bdyTxt > h1 {
+    font-size: 1.3rem;
+  }
+
+  .cakeBtn, .surpriseBtn {
+    margin-top: 10%;
+  }
+
+  .cakeBtn > button,.surpriseBtn > button {
+    width: 40%;
+    padding: 1% 0;
+    font-size: 0.7rem;
+  }
+
+  .goBck1 > button {
+    width: 25%;
+    font-size: 0.7rem;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .bothImg > img {
+    width: 40%;
+    margin-top: 18%;
+  }
+  
+  .bdyTxt > h1 {
+    font-size: 1.1rem;
+    margin-top: 8%;
+  }
+
+  .cakeBtn > button, .surpriseBtn > button {
+    width: 42%;
+    font-size: 0.7rem;
+  }
+
+  .goBck1 > button {
+    width: 25%;
+    font-size: 0.7rem;
+  }
+
+}
